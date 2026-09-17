@@ -1,0 +1,114 @@
+/* Estil senzill per veure cada part de l'estructura */
+:root {
+  --text: #203040;
+  --background: #f4f7f9;
+  --header: #dceeff;
+  --nav: #203040;
+  --section: #e4f6e9;
+  --article: #fff0d6;
+  --aside: #f1e4ff;
+  --footer: #dce3e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--text);
+  background: var(--background);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  margin-bottom: 16px;
+  padding: 20px;
+  border: 2px solid var(--text);
+  border-radius: 8px;
+}
+
+header {
+  background: var(--header);
+  text-align: center;
+}
+
+header h1,
+header p,
+section h2,
+article h2,
+aside h2 {
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  background: var(--nav);
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+  gap: 16px;
+}
+
+section,
+article,
+aside {
+  margin-bottom: 0;
+}
+
+section {
+  background: var(--section);
+}
+
+article {
+  background: var(--article);
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  background: var(--aside);
+}
+
+footer {
+  margin-top: 16px;
+  margin-bottom: 0;
+  background: var(--footer);
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 12px;
+  }
+
+  main {
+    display: block;
+  }
+
+  section,
+  article,
+  aside {
+    margin-bottom: 16px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
