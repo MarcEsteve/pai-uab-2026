@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 reptes de CSS | Ciutats intel·ligents i sostenibles</title>
+    <link rel="stylesheet" href="../CSS/exercicis-css.css">
+</head>
+<body>
+    <header class="capcalera">
+        <p class="sobrelinia">Grau en Ciutats Intel·ligents i Sostenibles · Laboratori web</p>
+        <h1>10 reptes de CSS per a la ciutat del futur</h1>
+        <p class="introduccio">
+            Dona forma a una ciutat més habitable: modifica el full CSS i aplica
+            estils a dades, serveis i espais urbans.
+        </p>
+    </header>
+
+    <main>
+        <section class="instruccions" aria-labelledby="instruccions-titol">
+            <h2 id="instruccions-titol">Com treballar-hi</h2>
+            <p>
+                Obre <code>CSS/exercicis-css.css</code> i completa els blocs
+                <code>REPTE 1</code> a <code>REPTE 10</code>. No cal modificar
+                l'HTML: cada repte t'indica el selector i les propietats que has
+                de provar. Desa els canvis i observa el resultat.
+            </p>
+        </section>
+
+        <section class="reptes" aria-label="Reptes pràctics de CSS">
+            <article class="repte">
+                <p class="numero">Repte 01 · Tipografia i color</p>
+                <h2>Un indicador de temperatura llegible</h2>
+                <p class="consigna">Selecciona <code>.temperatura</code>. Canvia el color del text i la mida de lletra perquè l'alerta de calor destaqui.</p>
+                <div class="mostra">
+                    <p class="temperatura">34 °C <span>Alerta de calor al centre</span></p>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 02 · Fons i vores arrodonides</p>
+                <h2>Estat d'un sensor ambiental</h2>
+                <p class="consigna">Selecciona <code>.sensor-actiu</code>. Afegeix un color de fons i arrodoneix les cantonades amb <code>border-radius</code>.</p>
+                <div class="mostra">
+                    <p class="sensor-actiu">● Sensor de qualitat de l'aire · Actiu</p>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 03 · Amplada, alçada i vora</p>
+                <h2>Un fragment del mapa del barri</h2>
+                <p class="consigna">Selecciona <code>.mapa-barri</code>. Defineix-ne l'amplada, l'alçada, el color de fons i una vora.</p>
+                <div class="mostra">
+                    <div class="mapa-barri" role="img" aria-label="Espai reservat per representar un mapa del barri">
+                        <span>Parc</span><span>Estació</span><span>Riu</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 04 · Model de caixa</p>
+                <h2>Una parada de transport públic</h2>
+                <p class="consigna">Selecciona <code>.parada</code>. Fes servir <code>padding</code>, <code>margin</code> i <code>border</code> per separar i emmarcar la informació.</p>
+                <div class="mostra">
+                    <div class="parada">
+                        <strong>Parada Universitat</strong>
+                        <span>Línia B2 · Arribada en 4 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 05 · Classes i estats</p>
+                <h2>Freqüència del bus en temps real</h2>
+                <p class="consigna">Dona un estil comú a <code>.estat-bus</code> i un estil diferent a les classes <code>.puntual</code> i <code>.retardat</code>.</p>
+                <div class="mostra estats">
+                    <p class="estat-bus puntual">Línia B2 · Puntual</p>
+                    <p class="estat-bus retardat">Línia C4 · Retard de 8 min</p>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 06 · Selector de llista</p>
+                <h2>Rutes de mobilitat activa</h2>
+                <p class="consigna">Selecciona <code>.rutes</code> i canvia el tipus de marcador amb <code>list-style-type</code>.</p>
+                <div class="mostra">
+                    <ul class="rutes">
+                        <li>Carril bici del riu</li>
+                        <li>Itinerari a peu accessible</li>
+                        <li>Ruta escolar segura</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 07 · Pseudoclasse</p>
+                <h2>Enllaç al portal de dades obertes</h2>
+                <p class="consigna">Selecciona <code>.enllac-dades</code> i crea un estil per a <code>:hover</code> perquè l'enllaç canviï quan hi passis el cursor.</p>
+                <div class="mostra">
+                    <a class="enllac-dades" href="https://opendata-ajuntament.barcelona.cat/">Consulta les dades obertes de la ciutat</a>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 08 · Selector d'identificador</p>
+                <h2>Consum energètic municipal</h2>
+                <p class="consigna">Selecciona <code>#consum-actual</code>. Fes que la dada principal tingui una mida de lletra més gran.</p>
+                <div class="mostra">
+                    <p>Consum d'avui <strong id="consum-actual">1.248 kWh</strong></p>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 09 · Amplada màxima i espaiat</p>
+                <h2>Panell d'una comunitat energètica</h2>
+                <p class="consigna">Selecciona <code>.panell-energia</code>. Limita'n l'amplada amb <code>max-width</code> i ajusta el farciment i el marge.</p>
+                <div class="mostra">
+                    <div class="panell-energia">
+                        <strong>Energia compartida</strong>
+                        <p>72 % de l'electricitat prové de plaques solars locals.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="repte">
+                <p class="numero">Repte 10 · Disseny adaptable</p>
+                <h2>Indicadors urbans en pantalles petites</h2>
+                <p class="consigna">Selecciona <code>.indicadors</code> i utilitza <code>@media</code> perquè els indicadors passin a una sola columna quan la pantalla faci 600 px d'ample o menys.</p>
+                <div class="mostra">
+                    <div class="indicadors">
+                        <p><strong>Qualitat de l'aire</strong><span>Bona</span></p>
+                        <p><strong>Bicicletes disponibles</strong><span>18</span></p>
+                        <p><strong>Places de càrrega</strong><span>6</span></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>CSS bàsic · Selectors, propietats i ciutat sostenible</p>
+    </footer>
+</body>
+</html>

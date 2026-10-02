@@ -1,0 +1,197 @@
+:root {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #20352f;
+    background: #f4f3e9;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.capcalera {
+    padding: 56px max(24px, calc((100% - 1040px) / 2));
+    color: #fffdf4;
+    background: #176b5b;
+    border-bottom: 8px solid #e4a83a;
+}
+
+.sobrelinia,
+.numero {
+    margin: 0 0 10px;
+    color: #b55b36;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sobrelinia {
+    color: #f3c65e;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    max-width: 780px;
+    margin-bottom: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.introduccio {
+    max-width: 660px;
+    margin-bottom: 0;
+    color: #e2eee8;
+    font-size: 1.1rem;
+}
+
+main {
+    width: min(1040px, calc(100% - 40px));
+    margin: 40px auto;
+}
+
+.instruccions {
+    max-width: 780px;
+    margin-bottom: 32px;
+}
+
+.instruccions h2,
+.repte h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+}
+
+code {
+    padding: 2px 5px;
+    color: #145848;
+    background: #e3eee7;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.92em;
+}
+
+.instruccions p,
+.consigna {
+    padding: 14px 18px;
+    border-left: 4px solid #df9c2d;
+    background: #fffdf4;
+}
+
+.reptes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.repte {
+    min-width: 0;
+    padding: 22px;
+    border-top: 4px solid #176b5b;
+    background: #fffdf4;
+}
+
+.repte h2 {
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+}
+
+.consigna {
+    min-height: 76px;
+    margin-bottom: 16px;
+    border-left-color: #176b5b;
+    background: #f1f5ef;
+    font-size: 0.94rem;
+}
+
+.mostra {
+    min-height: 74px;
+    padding: 14px;
+    border: 1px dashed #aab9ad;
+    background: #f8f8f1;
+}
+
+.mostra p:last-child,
+.mostra ul:last-child {
+    margin-bottom: 0;
+}
+
+.estats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.indicadors {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.indicadors p {
+    display: grid;
+    gap: 4px;
+    margin: 0;
+    padding: 10px;
+    background: #e8eee8;
+}
+
+.peu {
+    padding: 22px;
+    color: #fffdf4;
+    background: #20352f;
+    text-align: center;
+}
+
+.peu p {
+    margin: 0;
+}
+
+/* Repte 1: color i mida del text de .temperatura */
+
+
+/* Repte 2: color de fons i border-radius de .sensor-actiu */
+
+
+/* Repte 3: amplada, alçada, fons i vora de .mapa-barri */
+
+
+/* Repte 4: margin, padding i border de .parada */
+
+
+/* Repte 5: estil comú per .estat-bus i estils diferents per .puntual i .retardat */
+
+
+/* Repte 6: tipus de marcador de la llista .rutes */
+
+
+/* Repte 7: canvi d'estil de .enllac-dades en passar-hi el cursor */
+
+
+/* Repte 8: mida de lletra de #consum-actual */
+
+
+/* Repte 9: max-width, padding i margin de .panell-energia */
+
+
+/* Repte 10: en pantalles de 600px o menys, una columna per .indicadors */
+
+
+@media (max-width: 700px) {
+    .reptes {
+        grid-template-columns: 1fr;
+    }
+
+    .capcalera {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+}
