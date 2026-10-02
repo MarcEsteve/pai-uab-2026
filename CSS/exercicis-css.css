@@ -156,7 +156,10 @@ code {
 }
 
 /* Repte 1: color i mida del text de .temperatura */
-
+.temperatura {
+    color: red;
+    font-size: 40px;
+}
 
 /* Repte 2: color de fons i border-radius de .sensor-actiu */
 
