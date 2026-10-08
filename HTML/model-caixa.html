@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El model de caixa de CSS</title>
+    <link rel="stylesheet" href="../CSS/model-caixa.css">
+</head>
+<body>
+    <header class="capcalera">
+        <p class="sobrelinia">Laboratori web · CSS</p>
+        <h1>El model de caixa</h1>
+        <p class="introduccio">
+            Cada element HTML és una caixa formada pel contingut, el padding,
+            la vora i el marge.
+        </p>
+    </header>
+
+    <main>
+        <section class="demostracio" aria-labelledby="demostracio-titol">
+            <div class="text-demostracio">
+                <h2 id="demostracio-titol">Mira les capes de la caixa</h2>
+                <p>
+                    El color verd mostra el marge, que deixa espai al voltant
+                    de l'element. Dins de la vora, el padding separa el contingut
+                    de la vora.
+                </p>
+            </div>
+
+            <div class="escenari">
+                <p class="etiqueta-marge">MARGIN · 32 px</p>
+                <div class="caixa">
+                    <p class="etiqueta-padding">PADDING · 24 px</p>
+                    <div class="contingut">
+                        <span>CONTENT</span>
+                        <strong>Hola, món!</strong>
+                        <small>Amplada màxima del contingut: 300 px</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explicacio" aria-labelledby="explicacio-titol">
+            <h2 id="explicacio-titol">Les quatre parts</h2>
+            <dl class="parts">
+                <div>
+                    <dt>Content</dt>
+                    <dd>El text, la imatge o qualsevol contingut de l'element.</dd>
+                </div>
+                <div>
+                    <dt>Padding</dt>
+                    <dd>Espai interior entre el contingut i la vora.</dd>
+                </div>
+                <div>
+                    <dt>Border</dt>
+                    <dd>La línia que envolta el contingut i el padding.</dd>
+                </div>
+                <div>
+                    <dt>Margin</dt>
+                    <dd>Espai exterior que separa aquesta caixa de les altres.</dd>
+                </div>
+            </dl>
+            <p class="formula">
+                A la vista ampla, l'amplada de la caixa és:
+                <code>300 px + 24 px × 2 + 8 px × 2 = 364 px</code>.
+                El marge afegeix 32 px a cada costat, però queda fora de la caixa.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

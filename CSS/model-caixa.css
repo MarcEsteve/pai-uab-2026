@@ -1,0 +1,171 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    color: #17332e;
+    background: #f4f7f3;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.capcalera {
+    padding: 48px 24px;
+    color: #f7fbf6;
+    background: #173f38;
+    text-align: center;
+}
+
+.sobrelinia {
+    margin: 0 0 8px;
+    color: #a9d8bb;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.capcalera h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.introduccio {
+    max-width: 620px;
+    margin: 12px auto 0;
+    color: #d7e8dd;
+}
+
+main {
+    width: min(900px, calc(100% - 40px));
+    margin: 40px auto;
+}
+
+.demostracio,
+.explicacio {
+    padding: 28px;
+    border: 1px solid #d6e2d9;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.demostracio h2,
+.explicacio h2 {
+    margin-top: 0;
+}
+
+.text-demostracio {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.escenari {
+    max-width: 520px;
+    margin: 28px auto 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #dff1df;
+    background-image: radial-gradient(#a5cfa8 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+
+.etiqueta-marge {
+    margin: 12px 0 -20px;
+    color: #286343;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: center;
+}
+
+.caixa {
+    width: min(300px, calc(100% - 144px));
+    margin: 32px auto;
+    padding: 24px;
+    border: 8px solid #e8a84a;
+    background: #ffe7b8;
+}
+
+.etiqueta-padding {
+    margin: 0 0 10px;
+    color: #76501a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: center;
+}
+
+.contingut {
+    display: flex;
+    min-height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #287d70;
+    text-align: center;
+}
+
+.contingut span {
+    color: #c6efe3;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.contingut strong {
+    font-size: 1.6rem;
+}
+
+.contingut small {
+    color: #e0f3ed;
+}
+
+.explicacio {
+    margin-top: 24px;
+}
+
+.parts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 0;
+}
+
+.parts div {
+    padding: 16px;
+    border-radius: 10px;
+    background: #f1f6f1;
+}
+
+.parts dt {
+    color: #17634f;
+    font-weight: 700;
+}
+
+.parts dd {
+    margin: 4px 0 0;
+}
+
+.formula {
+    margin: 20px 0 0;
+}
+
+.formula code {
+    padding: 3px 6px;
+    border-radius: 4px;
+    background: #edf3ee;
+}
+
+@media (max-width: 520px) {
+    main {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+    }
+
+    .demostracio,
+    .explicacio {
+        padding: 20px;
+    }
+}
