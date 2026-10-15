@@ -2,8 +2,8 @@
 // IMPORTANT: Sempre retorna una cadena de text (String)!
 
 // 1. Demanar un text (ex: nom de la ciutat)
-let ciutat = prompt("Quina ciutat vols consultar?");
-alert("Estàs consultant dades de la ciutat de: " + ciutat);
+// let ciutat = prompt("Quina ciutat vols consultar?");
+// alert("Estàs consultant dades de la ciutat de: " + ciutat);
 
 // 2. Demanar un nombre (ex: nombre d'arbres al carrer)
 let resposta = prompt("Quants arbres hi ha al teu carrer?");
