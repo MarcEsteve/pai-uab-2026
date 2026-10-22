@@ -1,5 +1,4 @@
-let semafor = "verd",
-  text = "";
+let semafor = "verd",  text = "";
 
 switch (semafor) {
   case "verd":
