@@ -1,3 +1,41 @@
+:root {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #18324b;
+    background-color: #f2f6fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 48px 24px;
+    background:
+        radial-gradient(circle at top left, #dcecff 0, transparent 34rem),
+        #f2f6fb;
+}
+
 h1 {
-     background-color: aquamarine;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 40px;
+    border-left: 8px solid #f0a43a;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 32px rgb(24 50 75 / 10%);
+    color: #174c78;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        padding: 28px 24px;
+    }
 }
