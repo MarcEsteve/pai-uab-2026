@@ -44,8 +44,19 @@ numero1 = Number(prompt("14.5 - Introdueix el primer número:"));
 numero2 = Number(prompt("14.5 - Introdueix el segon número:"));
 numero3 = Number(prompt("14.5 - Introdueix el tercer número:"));
 
-const numerosOrdenats = [numero1, numero2, numero3].sort((a, b) => a - b);
-console.log("Números ordenats de menor a major: " + numerosOrdenats.join(", "));
+if (numero1 <= numero2 && numero2 <= numero3) {
+  console.log("Números ordenats de menor a major: " + numero1 + ", " + numero2 + ", " + numero3);
+} else if (numero1 <= numero3 && numero3 <= numero2) {
+  console.log("Números ordenats de menor a major: " + numero1 + ", " + numero3 + ", " + numero2);
+} else if (numero2 <= numero1 && numero1 <= numero3) {
+  console.log("Números ordenats de menor a major: " + numero2 + ", " + numero1 + ", " + numero3);
+} else if (numero2 <= numero3 && numero3 <= numero1) {
+  console.log("Números ordenats de menor a major: " + numero2 + ", " + numero3 + ", " + numero1);
+} else if (numero3 <= numero1 && numero1 <= numero2) {
+  console.log("Números ordenats de menor a major: " + numero3 + ", " + numero1 + ", " + numero2);
+} else {
+  console.log("Números ordenats de menor a major: " + numero3 + ", " + numero2 + ", " + numero1);
+}
 
 // 14.6. Comprova si es pot conduir segons el carnet i l'alcoholèmia.
 const teCarnet = prompt("14.6 - Tens carnet de conduir? (sí/no):")
