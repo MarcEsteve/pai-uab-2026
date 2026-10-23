@@ -30,6 +30,18 @@ h1 {
     line-height: 1.15;
 }
 
+p {
+    max-width: 900px;
+    margin: 18px auto 0;
+    padding: 24px 40px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgb(24 50 75 / 7%);
+    color: #43586b;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 24px 16px;
@@ -37,5 +49,10 @@ h1 {
 
     h1 {
         padding: 28px 24px;
+    }
+
+    p {
+        padding: 22px 24px;
+        font-size: 1rem;
     }
 }
