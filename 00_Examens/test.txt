@@ -1,33 +1,41 @@
 1. Quin element HTML s'utilitza per crear un enllaç? 
 a) <link> b) <a> c) <href> d) <url>
+1b
 
 2. Quin element HTML s'utilitza per crear una llista sense ordre?
 
 a) <ol> b) <li> c) <ul> d) <list>
+2c
 
 3. Quin atribut HTML s'utilitza per indicar el text alternatiu d'una imatge?
 
 a) src b) href c) title d) alt
+3d
 
 4. Quina propietat CSS s'utilitza per modificar la mida del text?
 
 a) text-size b) font-size c) size d) font-style
+4b
 
 5. Com es selecciona una classe anomenada "destacat" a CSS?
 
 a) #destacat b) destacat c) .destacat d) @destacat
+5c
 
 6. Observa aquest codi HTML: 
 <p class="text" id="principal">Hola món</p> 
 i el CSS: .text { color: blue;} #principal { color: red;} De quin color es mostrarà el text?
 
 a) Blau b) Vermell c) Negre d) No es mostrarà perquè hi ha dos selectors
+6b
 
 7. Observa aquest codi HTML: 
 <div> <p>Primer paràgraf</p> <p>Segon paràgraf</p> </div> 
 I el CSS: div p { color: green; }
+Qui tindrà el color verd aplicat pel CSS?
 
 a) Només el primer b) Només el segon c) Tots dos d) Cap dels dos
+7c
 
 8. Observa aquest codi CSS: 
 .caixa { width: 200px; padding: 20px; border: 5px solid black; }
@@ -35,3 +43,4 @@ a) Només el primer b) Només el segon c) Tots dos d) Cap dels dos
 Suposant el model de caixa estàndard (content-box), quina amplada total ocuparà l'element?
 
 a) 200 px b) 220 px c) 240 px d) 250 px
+8c
